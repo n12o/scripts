@@ -8,7 +8,7 @@
 #    -t for only showing their commits
 set -euo pipefail
 
-# todo(n12o): Handle custom project root
+# TODO(n12o): Handle custom project root
 cd /c/ClashOfStreamers
 
 mine='false'
