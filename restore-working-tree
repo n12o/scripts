@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# todo specify directory
+cd /c/ClashOfStreamers
+
+status=$(git status -s)
+
+OIFS="$IFC"
+IFS=$'\n'
+
+for element in $status
+do
+    IFS=$' '
+    arrElement=($element)
+    rm -rf ${arrElement[1]}
+done
+
+git checkout .
